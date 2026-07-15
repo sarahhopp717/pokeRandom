@@ -32,7 +32,25 @@ function App() {
       }
 
       const data = await response.json();
-      setPokemon(data);
+
+      const speciesResponse = await fetch(data.species.url);
+      const speciesData = await speciesResponse.json();
+
+      const evolutionResponse = await fetch(speciesData.evolution_chain.url);
+      const evolutionData = await evolutionResponse.json();
+
+      const evolutions = [];
+      let current = evolutionData.chain;
+
+      while (current) {
+        evolutions.push(current.species.name);
+        current =
+          current.evolves_to && current.evolves_to.length > 0
+            ? current.evolves_to[0]
+            : null;
+      }
+
+      setPokemon({ ...data, evolutions });
     } catch (err) {
       setError(err.message || "Something went wrong. Please try again.");
     } finally {
@@ -56,7 +74,11 @@ function App() {
         </div>
       )}
 
-      {pokemon && !loading && !error && <PokemonCard pokemon={pokemon} />}
+      {pokemon && !loading && !error && (
+        <>
+          <PokemonCard pokemon={pokemon} />
+        </>
+      )}
     </div>
   );
 }

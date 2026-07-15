@@ -1,0 +1,102 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.pokemon-card {
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pokemon-image {
+  width: 150px;
+  height: 150px;
+  image-rendering: pixelated;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin: 0.25rem;
+  color: white;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  background-color: #777;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #eee;
+  text-transform: capitalize;
+}
+
+.error {
+  color: #cc0000;
+  padding: 1rem;
+  border: 1px solid #cc0000;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
+}
+.evolutions {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #eee;
+}
+
+.evolutions h3 {
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.evolution-chain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.evolution-chain span {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}

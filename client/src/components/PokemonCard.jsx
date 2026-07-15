@@ -36,6 +36,20 @@ function PokemonCard({ pokemon }) {
           </div>
         ))}
       </div>
+
+      {pokemon.evolutions && pokemon.evolutions.length > 1 && (
+        <div className="evolutions">
+          <h3>Evolution Chain</h3>
+          <div className="evolution-chain">
+            {pokemon.evolutions.map((evo, index) => (
+              <span key={evo}>
+                {evo.charAt(0).toUpperCase() + evo.slice(1)}
+                {index < pokemon.evolutions.length - 1 && " → "}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
