@@ -6,8 +6,31 @@ function PokemonCard({ pokemon }) {
     value: s.base_stat,
   }));
 
+  const typeColors = {
+    fire: "#FDDCB5",
+    water: "#C5E8FF",
+    grass: "#C8F0C8",
+    electric: "#FFF4B0",
+    poison: "#E8C8F0",
+    rock: "#E8E0C8",
+    ground: "#F0E4C0",
+    psychic: "#FFD0E0",
+    ice: "#D0F0F8",
+    dragon: "#C8C8FF",
+    dark: "#D0C8C0",
+    fairy: "#FFD0E8",
+    fighting: "#F0C8C0",
+    ghost: "#C8C0E0",
+    bug: "#D8ECC0",
+    steel: "#D8D8E8",
+    flying: "#D8E8FF",
+    normal: "#F0F0F0",
+  };
+
+  const cardColor = typeColors[types[0]] || "#F0F0F0";
+
   return (
-    <div className="pokemon-card">
+    <div className="pokemon-card" style={{ backgroundColor: cardColor }}>
       <h2>
         #{pokemon.id} {pokemon.name.toUpperCase()}
       </h2>
