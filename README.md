@@ -31,13 +31,14 @@ Built as part of the Crexendo Developer Advocate take-home assessment.
 pokeRandom/
 ├── client/
 │   ├── public/
+│   │   ├── card-back.png        # Pokemon card back background image
 │   │   └── favicon.png          # Pokeball favicon
 │   ├── src/
 │   │   ├── components/
 │   │   │   └── PokemonCard.jsx  # Displays Pokemon data — image, types, stats, evolution chain
 │   │   ├── App.css              # All styling including type-based card colors
 │   │   ├── App.jsx              # Main component — state management, API fetch logic, error handling
-│   │   ├── index.css            # Global base styles
+│   │   ├── index.css            # Global base styles and Pokemon card background
 │   │   └── main.jsx             # React entry point
 │   ├── index.html               # HTML template — sets page title and favicon
 │   ├── package.json             # Project dependencies and scripts
