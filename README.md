@@ -61,25 +61,19 @@ git clone https://github.com/sarahhopp717/pokeRandom.git
 cd pokeRandom
 ```
 
-2. Navigate to the client folder
-
-```bash
-cd client
-```
-
-3. Install dependencies
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-4. Start the development server
+3. Start the development server
 
 ```bash
 npm run dev
 ```
 
-5. Open your browser to `http://localhost:5173`
+4. Open your browser to `http://localhost:5174`
 
 ---
 
