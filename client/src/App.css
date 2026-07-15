@@ -1,5 +1,5 @@
 .app {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -7,14 +7,18 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: #ffd700;
+  -webkit-text-stroke: 3px #1a1a6e;
+  letter-spacing: 2px;
+  padding-top: 40px;
 }
 
 button {
   background-color: #cc0000;
   color: white;
-  border: none;
+  border: 2px solid black;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -55,12 +59,12 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   padding: 0.25rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #2d2727;
   text-transform: capitalize;
 }
 
 .error {
-  color: #cc0000;
+  color: white;
   padding: 1rem;
   border: 1px solid #cc0000;
   border-radius: 8px;
@@ -68,13 +72,14 @@ button:disabled {
 }
 
 .loading {
-  color: #666;
-  font-style: italic;
+  color: black;
+  font-style: bold;
+  font-size: large;
 }
 .evolutions {
   margin-top: 1.5rem;
   padding-top: 1rem;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #2d2727;
 }
 
 .evolutions h3 {

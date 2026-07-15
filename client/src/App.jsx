@@ -60,9 +60,9 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Random Pokemon Generator</h1>
+      <h1>Pokemon Random Generator</h1>
       <button onClick={getRandomPokemon} disabled={loading}>
-        {loading ? "Loading..." : "Get Random Pokemon"}
+        {loading ? "Loading..." : "Click me!"}
       </button>
 
       {loading && <p className="loading">Fetching your Pokemon...</p>}
